@@ -15,6 +15,12 @@ export const NavigationBar = (props) => {
             <NavLink to="contact12" style={{ marginLeft: "10px" }}>
               contact us
             </NavLink>
+            <NavLink to="profile" style={{ marginLeft: "10px" }}>
+              profile
+            </NavLink>
+            <NavLink to="users" style={{ marginLeft: "10px" }}>
+              users
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

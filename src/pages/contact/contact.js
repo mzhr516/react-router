@@ -1,10 +1,13 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 
 export const Contact = (props) => {
   const navigate = useNavigate();
   const handliClick = () => {
-    navigate("/");
+    setTimeout(()=>{
+      navigate("/about");
+    },5000)
+    
   };
   const handleOnBcak=()=>{
     navigate(-1)
@@ -18,7 +21,7 @@ export const Contact = (props) => {
         ex quasi libero? Nesciunt?
       </p>
 
-      <button onClick={handliClick}>go to home page</button>
+     <button onClick={handliClick}>go to home page</button>
       <button onClick={handleOnBcak}>back</button>
     </div>
   );
