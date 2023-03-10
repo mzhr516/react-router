@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
-export const NavigationBar = (props) => {
+export const NavigationBar = ({isLogin}) => {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
@@ -21,6 +21,9 @@ export const NavigationBar = (props) => {
             <NavLink to="users" style={{ marginLeft: "10px" }}>
               users
             </NavLink>
+            {!isLogin &&<NavLink to="login" style={{ marginLeft: "10px" }}>
+              login
+            </NavLink>}
           </Nav>
         </Navbar.Collapse>
       </Container>
